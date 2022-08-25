@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  h1,
+  /* h1,
   h2,
   button {
     font-family: "Special Elite", serif;
@@ -14,11 +14,14 @@
   h3,
   p {
     font-family: "Merriweather", serif;
-  }
+  } */
   h2 {
-    font-size: 1.875rem;
     line-height: 2.25rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+  }
+
+  p {
+    line-height: 2;
   }
 }
