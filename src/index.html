@@ -7,22 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Allison&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Special+Elite&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Allison&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Special+Elite&display=swap"
       rel="stylesheet"
     />
     <title>Københavnerbilleder</title>
   </head>
-  <body class="grid place-items-center font-merriweather">
+  <body class="font-merriweather">
     <main>
       <!-- Forside -->
       <section class="mb-12 grid md:grid-cols-2">
-        <img
-          src="billeder/orestad-til-islands-brygge-pentax-auto-110-24.jpg"
-          alt="forsidebillede"
-        />
-        <div class="grid bg-primary p-6 text-secondary lg:p-12">
+        <picture>
+          <img
+            src="billeder/orestad-til-islands-brygge-pentax-auto-110-24.jpg"
+            alt="forsidebillede"
+            width="3499"
+            height="2799"
+          />
+        </picture>
+        <div class="grid bg-primary p-8 text-secondary lg:p-12">
           <h1
-            class="font-speciel_elite text-3xl lg:mt-20 lg:text-4xl xl:text-5xl"
+            class="mt-4 font-speciel_elite text-3xl font-bold lg:mt-16 lg:text-4xl xl:text-5xl"
           >
             Københavnerbilleder
           </h1>
@@ -36,15 +40,15 @@
           </h4>
           <a
             href="#0"
-            class="place-self-center rounded-md bg-linkfarve p-2 px-4 font-speciel_elite text-light"
+            class="lg:font-xl place-self-center rounded-md bg-linkfarve p-2 px-4 font-speciel_elite text-white lg:p-3"
           >
             Køb bogen
           </a>
         </div>
       </section>
       <!-- Stamdata, billeder og intro til bog -->
-      <div class="grid px-6 lg:mx-24">
-        <section class="mb-12">
+      <div class="grid px-6 lg:mx-28">
+        <section class="mb-12 md:my-12">
           <h2
             class="font-speciel_elite text-2xl font-bold text-primary md:text-3xl"
           >
@@ -60,40 +64,46 @@
             </p>
             <div class="grid md:place-content-center">
               <p class="text-lightgrey">
-                Titel: Københavnerbilleder - en guide til hipster foto
+                <b>Titel:</b> Københavnerbilleder - en guide til hipster foto
               </p>
               <p class="text-lightgrey">
-                Forfatter:Sten Simons Antal sider: 344
+                <b>Forfatter:</b> Sten Simons Antal sider: 344
               </p>
-              <p class="text-lightgrey">Forlag: Mellem Linjerne</p>
-              <p class="text-lightgrey">ISBN: 987-6-987654-32-1</p>
-              <p class="text-lightgrey">Pris: 399.-</p>
+              <p class="text-lightgrey"><b>Forlag:</b> Mellem Linjerne</p>
+              <p class="text-lightgrey"><b>ISBN:</b> 987-6-987654-32-1</p>
+              <p class="text-lightgrey"><b>Pris:</b> 399.-</p>
             </div>
           </div>
           <div class="my-8 grid gap-4 md:grid-cols-3">
             <img
               src="billeder/kobenhavnerbilleder-sten-simons.jpg"
               alt="lukket_bog"
+              width="4000"
+              height="3000"
             />
             <img
               src="billeder/kobenhavnerbilleder_oppefra.jpg"
               alt="aaben_bog"
+              width="2799"
+              height="3499"
             />
             <img
               src="billeder/kobenhavnerbilleder_aaben_venstre.jpg"
               alt="aaben_bog_på_skraa"
+              width="2799"
+              height="3499"
             />
           </div>
         </section>
 
         <!-- bogen kapitler -->
-        <section class="mb-12">
+        <section class="mb-12 md:my-12">
           <div
             class="gap-4 md:grid md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-4"
           >
             <div class="col-span-2 my-6 grid rounded-md bg-white p-4 shadow-lg">
               <h2
-                class="grid font-speciel_elite text-4xl text-darkgrey md:place-items-center md:text-6xl"
+                class="grid font-speciel_elite text-4xl font-black text-primary md:place-items-center md:text-6xl"
               >
                 Bogens kapitler
               </h2>
@@ -193,12 +203,12 @@
             <div
               class="col-span-2 my-6 grid place-items-center rounded-md bg-white p-4 shadow-lg"
             >
-              <h3 class="my-6 text-lg font-bold text-darkgrey">
+              <h3 class="my-6 text-lg font-bold text-primary">
                 Hent et gratis prøvekapitel
               </h3>
               <a
                 href="#0"
-                class="place-self-center rounded-md bg-linkfarve p-2 px-4 font-speciel_elite text-light"
+                class="place-self-center rounded-md bg-linkfarve p-2 px-4 font-speciel_elite text-white lg:p-3 lg:px-5"
               >
                 Hent her
               </a>
@@ -206,14 +216,78 @@
           </div>
         </section>
         <!-- anmeldelser -->
-        <section class="mb-12">
-          <h2 class="font-speciel_elite text-2xl text-darkgrey md:text-3xl">
+        <section class="mb-12 rounded-md bg-light">
+          <h2
+            class="p-8 font-speciel_elite text-2xl font-bold text-primary md:text-3xl"
+          >
             Hvad siger anmelderne
           </h2>
 
-          <div class="my-6 grid gap-4 md:grid-cols-3">
-            <div>
+          <div class="my-6 grid gap-8 p-8 md:grid-cols-3">
+            <div class="">
               <p class="font-black text-darkgrey">5 af 6 stjerner</p>
+              <div class="flex">
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+              </div>
               <p class="text-lightgrey">
                 Københavnerbilleder er en grundig introduktion til at skyde
                 billeder med retro-kant. Hvad enten du er har arbejdet med foto
@@ -227,6 +301,59 @@
             </div>
             <div>
               <p class="font-black text-darkgrey">4 af 5 stjerner</p>
+              <div class="flex">
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+              </div>
               <p class="text-lightgrey">
                 Teksten er underholdende, og billederne er sku’ flotte. Hvad
                 mere skal man sige om en fotobog?
@@ -237,6 +364,68 @@
             </div>
             <div>
               <p class="font-black text-darkgrey">6 af 6 stjerner</p>
+              <div class="flex">
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 32 32">
+                  <path
+                    fill="#fecc16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.546 4.984a.5.5 0 0 1 .908 0l3.097 6.714a.5.5 0 0 0 .395.287l7.341.87a.5.5 0 0 1 .28.864l-5.427 5.02a.5.5 0 0 0-.15.464l1.44 7.251a.5.5 0 0 1-.735.534l-6.45-3.611a.5.5 0 0 0-.49 0l-6.45 3.61a.5.5 0 0 1-.735-.533l1.44-7.251a.5.5 0 0 0-.15-.465l-5.428-5.02a.5.5 0 0 1 .28-.863l7.342-.87a.5.5 0 0 0 .396-.287l3.096-6.714Z"
+                  />
+                </svg>
+              </div>
               <p class="text-lightgrey">
                 Sten Simons kan det der - og han bliver bedre og bedre. Stens
                 tredje fotobog er klart den bedste - her er han for alvor i sit
@@ -250,8 +439,10 @@
           </div>
         </section>
         <!-- billedegalleri -->
-        <section class="mb-12">
-          <h2 class="font-speciel_elite text-2xl text-darkgrey md:text-3xl">
+        <section class="mb-12 md:my-12">
+          <h2
+            class="font-speciel_elite text-2xl font-bold text-primary md:text-3xl"
+          >
             Billeder fra bogen
           </h2>
           <div class="md:grid-rows gap-4 md:grid md:grid-cols-3">
@@ -260,6 +451,8 @@
                 class="row-span-2 my-6 self-stretch object-cover md:my-0"
                 src="billeder/orestad-til-islands-brygge-pentax-auto-110-16.jpg"
                 alt="metroen"
+                width="2799"
+                height="3499"
               />
             </picture>
 
@@ -268,6 +461,8 @@
                 class="my-6 md:my-0"
                 src="billeder/orestad-til-islands-brygge-pentax-auto-110.jpg"
                 alt="Ørestaden med metro"
+                width="3499"
+                height="2799"
               />
             </picture>
             <picture class="contents">
@@ -275,6 +470,8 @@
                 class="my-6 md:my-0"
                 src="billeder/orestad-til-islands-brygge-pentax-auto-110-17.jpg"
                 alt="njalsgade"
+                width="3499"
+                height="2799"
               />
             </picture>
 
@@ -292,6 +489,8 @@
                 class="row-span-2 my-6 self-stretch object-cover md:my-0"
                 src="billeder/orestad-til-islands-brygge-pentax-auto-110-8.jpg"
                 alt="amagerfælled"
+                width="2799"
+                height="3499"
               />
             </picture>
             <picture class="contents">
@@ -299,6 +498,8 @@
                 class="my-6 md:my-0"
                 src="billeder/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
                 alt="havnen"
+                width="3499"
+                height="2799"
               />
             </picture>
 
@@ -307,16 +508,20 @@
                 class="my-6 md:my-0"
                 src="billeder/orestad-til-islands-brygge-pentax-auto-110-24.jpg"
                 alt="Ørestaden"
+                width="3499"
+                height="2799"
               />
             </picture>
           </div>
         </section>
         <!-- om forfatteren -->
-        <section class="mb-12">
-          <h2 class="font-speciel_elite text-2xl text-darkgrey md:text-3xl">
+        <section class="mb-12 md:my-12">
+          <h2
+            class="font-speciel_elite text-2xl font-bold text-primary md:text-3xl"
+          >
             Om forfatteren
           </h2>
-          <div class="grid gap-12 md:grid-cols-2">
+          <div class="grid gap-12 lg:grid-cols-2">
             <div class="grid">
               <p class="text-lightgrey">
                 Sten Simons har en lang foto-karriere bag sig. Det hele startede
@@ -332,13 +537,13 @@
               </p>
               <div class="grid rounded-md bg-white p-16 shadow-lg">
                 <h3
-                  class="mb-6 grid place-self-center text-lg font-bold text-darkgrey"
+                  class="mb-6 grid place-self-center text-lg font-bold text-primary"
                 >
                   Få dit eget eksemplar af bogen
                 </h3>
                 <a
                   href="#0"
-                  class="mb-16 grid place-self-center rounded-md bg-linkfarve p-2 px-4 font-speciel_elite text-light"
+                  class="mb-16 grid place-self-center rounded-md bg-linkfarve p-2 px-4 font-speciel_elite text-white lg:p-3 lg:px-5"
                 >
                   Køb bogen
                 </a>
@@ -351,7 +556,15 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="grid grid-cols-3 place-items-center bg-light p-4">
+        <p>
+          Forlaget -<i> <b>Mellem linjerne</b></i>
+        </p>
+        <p>@copy</p>
+        <p>2022</p>
+      </div>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

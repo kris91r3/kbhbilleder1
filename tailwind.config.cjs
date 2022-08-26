@@ -8,7 +8,7 @@ module.exports = {
       linkfarve: "#137586",
       darkgrey: "#121212",
       lightgrey: "#3a3a3a",
-      light: "#dfdfdf",
+      light: "#cccccc",
       white: "#ffffff",
       black: "#000000",
     },
